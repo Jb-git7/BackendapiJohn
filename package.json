@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "license": "ISC",
   "author": "",
   "main": "index.js",
@@ -18,5 +17,15 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jb-git7/BackendapiJohn.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Jb-git7/BackendapiJohn/issues"
+  },
+  "homepage": "https://github.com/Jb-git7/BackendapiJohn#readme",
+  "description": ""
 }

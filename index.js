@@ -1,12 +1,12 @@
-import express from 'express';
+import express from "express";
 
 const app = express();
 app.use(express.json());
 
-const port=5000
+const port = 5000;
 
-app.use(express.json());
+app.get("/", (req, res) => res.json({ msg: "Hello from express" }));
 
-app.get("/",(req,res)=>res.send("Hello from express"))
-
-app.listen(port, ()=>console.log(`Server is listening on port: http://localhost:${port}`))
+app.listen(port, () =>
+  console.log(`Server is listening on port: http://localhost:${port}`)
+);

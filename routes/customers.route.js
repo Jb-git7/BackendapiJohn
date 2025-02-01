@@ -1,27 +1,25 @@
 import express from "express";
+import {
+  CustomerCreate,
+  CustomerDelete,
+  CustomerIndex,
+  CustomerUpdate,
+} from "../controllers/customers.controllers.js";
 
 const router = express.Router();
 
 //CRUD FUNCTIONALITY
 
 //CREATE
-router.post("/", (req, res) => {
-  res.send("Create customers");
-});
+router.post("/", CustomerCreate);
 
 //READ
-router.get("/", (req, res) => {
-  res.send("Get all customers");
-});
+router.get("/", CustomerIndex);
 
 //UPDATE
-router.put("//:id", (req, res) => {
-  res.send("Update customers");
-});
+router.put("/:id", CustomerUpdate);
 
 //DELETE
-router.delete("//:id", (req, res) => {
-  res.send("Delete customers");
-});
+router.delete("/:id", CustomerDelete);
 
 export default router;
